@@ -22,9 +22,63 @@
       .green-heading {
         color: green;
       }
+      div {
+        margin-bottom: 20px;
+      }
+      input {
+        padding: 8px;
+      }
+      .input-label {
+        display: inline-block;
+        width:150px;
+      }
     </style>
   </head>
   <body>
+    <h1>Demo of forms</h1>
+    <form>
+      <div>
+      <label for="firstName" class="input-label">First Name</label>
+      <input type="text" placeholder="Enter first name" id="firstName"/>
+    </div>
+    <div>
+      <label for="lastName"  class="input-label">Last Name</label>
+      <input type="text" placeholder="Enter last name" id="lastName"/>
+    </div>
+    <div>
+      <label for="phNo"  class="input-label">Phone Number</label>
+      <input type="number" placeholder="Enter phone Number" id="phNo"/>
+    </div>
+    <div>
+      <label for="email"  class="input-label">Email</label>
+      <input type="email" placeholder="abc@gmail.com" id="email"/>
+    </div>
+    <div>
+      <label for="gender"  class="input-label">Gender</label>
+      <input type="radio" id="male" name="gender"/>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender"/>
+      <label for="female">Female</label>
+      <input type="radio" id="custom" name="gender">
+      <label for="custom"> custom</label> 
+    </div>
+    <div>
+      <label for="password"  class="input-label">Password</label>
+      <input type="password" placeholder="enter password" id="password"/>
+    </div>
+    <div>
+      <label>Choose your subjects</label>
+      <input type="checkbox" id="html" name="html" value="html">
+      <label>HTML</label>
+      <input type="checkbox" id="css" name="css" value="css">
+      <label>css</label>
+      <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+      <label>Javascript</label>
+      <input type="checkbox" id="React" name="React" value="React">
+      <label>React</label>
+    </div>
+    <button type="submit" >Signup</button>
+    </form>
     <h2 id="top"><a href="#c1"> Chapter 1</a></h2>
 
     <h2><a href="#c2">Chapter 2</a></h2>

@@ -3,13 +3,28 @@
 }
 #id-demo {
   background-color: red;
-  color: white;
+  color: #ffffff;
+  text-align: center;
+  border: 10px solid black;
+  border: 2px dotted black;
+  border: 2px dashed black;
+  border-radius: 10px;
+  /* border-style: solid;
+  border-width: 2px;
+  border-color: black; */
 }
 
 .class-demo {
   background-color: bisque;
 }
+.click-btn {
+  background-color: blueviolet;
+  /* top right bottom left */
 
+  padding: 10px 30px 100px 10px;
+  padding: 100px 20px;
+  padding: 20px;
+}
 .class-demo:hover {
   background-color: red;
 }
@@ -19,6 +34,12 @@ span {
   font-size: 20px;
 }
 
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
 * {
   /* font-size: 40px; */
 }

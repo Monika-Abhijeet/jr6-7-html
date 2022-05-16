@@ -1,0 +1,24 @@
+.personal-details {
+  font-size: 15px;
+}
+#id-demo {
+  background-color: red;
+  color: white;
+}
+
+.class-demo {
+  background-color: bisque;
+}
+
+.class-demo:hover {
+  background-color: red;
+}
+
+span {
+  background-color: greenyellow;
+  font-size: 20px;
+}
+
+* {
+  /* font-size: 40px; */
+}

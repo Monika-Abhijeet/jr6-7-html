@@ -32,11 +32,17 @@
         display: inline-block;
         width:150px;
       }
+      #phNo {
+        background-color: black;
+        color: white
+      }
     </style>
   </head>
   <body>
     <h1>Demo of forms</h1>
     <form>
+      <fieldset>
+        <legend>Personal details</legend>
       <div>
       <label for="firstName" class="input-label">First Name</label>
       <input type="text" placeholder="Enter first name" id="firstName"/>
@@ -66,6 +72,9 @@
       <label for="password"  class="input-label">Password</label>
       <input type="password" placeholder="enter password" id="password"/>
     </div>
+  </fieldset>
+  <fieldset>
+    <legend>favourites</legend>
     <div>
       <label>Choose your subjects</label>
       <input type="checkbox" id="html" name="html" value="html">
@@ -77,7 +86,26 @@
       <input type="checkbox" id="React" name="React" value="React">
       <label>React</label>
     </div>
+    <div>
+      <label>Choose your favourite car</label>
+      <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="Audi">Audi</option>
+        <option value="Kia">Kia</option>
+        <option value="Ritz">Ritz</option>
+
+
+      </select>
+    </div>
+    <div>
+      <textarea name="comment" rows="20" cols="70"></textarea>
+    </div>
     <button type="submit" >Signup</button>
+  </fieldset>
+    </form>
+
+
     </form>
     <h2 id="top"><a href="#c1"> Chapter 1</a></h2>
 

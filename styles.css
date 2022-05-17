@@ -147,3 +147,15 @@ span {
 .dog-img {
   float: right;
 }
+
+.flex-demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.flex-para {
+  border: 3px solid black;
+  width: 600px;
+}

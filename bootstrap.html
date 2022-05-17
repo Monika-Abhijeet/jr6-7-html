@@ -210,7 +210,7 @@
       </ul>
     </div>
     <h1>demo of nav</h1>
-    <ul class="nav justify-content-center flex-column">
+    <ul class="nav justify-content-center flex-column bg-dark">
       <li class="nav-item">
         <a class="nav-link" href="./learn-css.html" target="_blank"> Home</a>
       </li>
@@ -267,5 +267,69 @@
         </div>
       </div>
     </div>
+    <h1>Demo of flex</h1>
+    <!-- flex-column flex-row  flex-row-reverse flex-column-reverse justify-content-start justify-content-end justify-content-around -->
+    <div class="d-flex flex-row justify-content-center">
+      <div class="bg-success p-3">Flex 1</div>
+      <div class="bg-danger p-3">Flex 2</div>
+      <div class="bg-primary p-3">Flex 3</div>
+    </div>
+    <h1>Demo of forms</h1>
+    <form>
+      <div>
+        <label class="form-label" for="email">Email</label>
+        <input
+          type="email"
+          placeholder="abc@gmail.com"
+          id="email"
+          name="email"
+          class="form-control"
+        />
+      </div>
+      <div>
+        <label class="form-label" for="password">Password</label>
+
+        <input
+          type="password"
+          placeholder="enter min 8 character password"
+          id="password"
+          name="password"
+          class="form-control"
+        />
+    </div>
+
+      </div>
+      <div>
+          <label for="comment" class="form-label">Comment</label>
+          <textarea rows="10" class="form-control"></textarea>      </div>
+
+          <div class="row">
+            <div class="col">
+                <label class="form-label" for="email">Email</label>
+        <input
+          type="email"
+          placeholder="abc@gmail.com"
+          id="email"
+          name="email"
+          class="form-control"
+        />         </div>
+            <div class="col">
+                <label class="form-label" for="password">Password</label>
+
+                <input
+                type="password"
+                placeholder="enter min 8 character password"
+                id="password"
+                name="password"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div>
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" readonly value="Madhu"/>
+          <input type="color" class="form-control form-control-color"/>
+        </div>
+    </form>
   </body>
 </html>

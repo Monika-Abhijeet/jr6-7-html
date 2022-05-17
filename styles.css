@@ -30,7 +30,7 @@
 }
 
 span {
-  background-color: greenyellow;
+  background-color: red;
   font-size: 20px;
 }
 
@@ -57,9 +57,10 @@ span {
 }
 .header {
   height: 80px;
-  background-color: blue;
+  background-color: green;
   color: white;
   text-align: center;
+  vertical-align: baseline;
   font-size: 20px;
   position: fixed;
   top: 0;
@@ -70,7 +71,7 @@ span {
 
 .header-sticky {
   height: 80px;
-  background-color: blue;
+  background-color: green;
   color: white;
   text-align: center;
   font-size: 20px;
@@ -79,6 +80,8 @@ span {
   left: 0;
   width: 100%;
   margin-bottom: 80px;
+  vertical-align: baseline;
+  text-transform: capitalize;
 }
 .overflow-demo {
   background-color: chartreuse;
@@ -87,4 +90,60 @@ span {
   overflow: hidden;
   overflow: scroll;
   overflow: auto;
+}
+
+.personal-table {
+  width: 80%;
+}
+
+.personal-table,
+.personal-table tr,
+.personal-table td,
+.personal-table th {
+  text-align: center;
+  border: 1px solid black;
+  border-collapse: collapse;
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.personal-table th {
+  height: 10%;
+}
+
+.personal-table tr:hover {
+  background-color: red;
+}
+.personal-table tr:nth-child(even) {
+  background-color: bisque;
+}
+.personal-table tr:nth-child(odd) {
+  background-color: cadetblue;
+}
+/* .personal-row {
+  text-align: center;
+} */
+
+.box {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+}
+#box1 {
+  background-color: red;
+  z-index: 2;
+}
+#box2 {
+  background-color: green;
+  left: 50px;
+  z-index: 1;
+}
+#box3 {
+  background-color: blue;
+  left: 100px;
+  z-index: 3;
+}
+
+.dog-img {
+  float: right;
 }

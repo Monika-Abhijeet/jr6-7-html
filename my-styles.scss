@@ -1,0 +1,17 @@
+$primary: aqua;
+$secondary: red;
+$container-color: bisque;
+
+.home-container {
+  height: 100vh;
+  background-color: $container-color;
+}
+
+.paragraph1 {
+  background-color: $primary;
+  color: white;
+}
+
+.form-input {
+  background-color: $primary;
+}

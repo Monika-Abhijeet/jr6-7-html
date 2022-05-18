@@ -138,7 +138,55 @@ console.log(fruits.length);
 console.log(fruits.concat(vegetables, leafies));
 
 // splice
-// const fruits = ["apple", "orange", "mango"];
+// const fruits = ["apple", "orange", "mango", "peach", "strawberry", "guava"];
 
-console.log(fruits.splice(2, 1, "grapes", "kiwi"));
+console.log(fruits.splice(2, 2, "grapes", "kiwi"));
 console.log(fruits);
+
+let employees = [
+  { name: "monika", salary: 90000 },
+  { name: "Abhijeet", salary: 150000 },
+  { name: "Gaanavi", salary: 13000 },
+  { name: "mamatha", salary: 5000 },
+  { name: "prahlad", salary: 30000 },
+  { name: "Sharad", salary: 88000 },
+];
+
+let lesSalary = employees.filter((emp) => {
+  return emp.salary < 50000;
+});
+
+let moreSalary = employees.filter((emp) => {
+  return emp.salary > 50000;
+});
+
+console.log(lesSalary);
+console.log(moreSalary);
+
+const registeredUsers = [
+  {
+    userName: "Monika",
+    password: "monika123",
+  },
+  {
+    userName: "Sharad",
+    password: "sharad56657",
+  },
+  {
+    userName: "Gaanavi",
+    password: "Gaanu777",
+  },
+];
+
+let uName = "Gaanavi";
+let pwd = "Gaanu7798";
+
+let loginUser = registeredUsers.filter((user) => {
+  return user.userName === uName && user.password === pwd;
+});
+
+if (loginUser.length > 0) {
+  console.log("login successfull");
+} else {
+  console.log("login failed");
+}

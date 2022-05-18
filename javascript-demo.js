@@ -250,3 +250,30 @@ const {
 
 console.log(email, state, name);
 console.log({ ...personalDetails, ...careerDetails });
+
+var numbers = [1, 2, 3, 4, 5];
+
+var squareNumbers = numbers.map((num) => {
+  return num * num;
+});
+
+const halodocEmp = [
+  "Monika",
+  "siddireddy",
+  "madhu",
+  "harish",
+  "deepthi",
+  "keerthana",
+  "jeeshitha",
+  "Akhila",
+];
+
+const empDetails = halodocEmp.map((emp, index) => {
+  return {
+    slNo: index + 1,
+    name: emp,
+    company: "Halodoc",
+  };
+});
+console.log(squareNumbers);
+console.log(empDetails);

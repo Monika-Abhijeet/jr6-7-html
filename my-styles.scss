@@ -1,7 +1,11 @@
-$primary: aqua;
-$secondary: red;
-$container-color: bisque;
+@import "./variables.scss";
 
+@mixin setStyles($height, $width, $backgroundColor, $color) {
+  height: $height;
+  width: $width;
+  background-color: $backgroundColor;
+  color: $color;
+}
 .home-container {
   height: 100vh;
   background-color: $container-color;
@@ -14,4 +18,11 @@ $container-color: bisque;
 
 .form-input {
   background-color: $primary;
+}
+
+.mixin-demo {
+  @include setStyles(100px, 100px, pink, black);
+}
+.second-mixin {
+  @include setStyles(400px, 200px, violet, white);
 }

@@ -40,9 +40,7 @@ span {
   background-color: aquamarine;
   border-radius: 50%;
 }
-* {
-  /* font-size: 40px; */
-}
+
 .relative-demo {
   position: relative;
   top: 200px;

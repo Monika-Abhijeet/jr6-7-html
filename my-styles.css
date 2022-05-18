@@ -1,14 +1,28 @@
 .home-container {
   height: 100vh;
-  background-color: bisque;
+  background-color: blue;
 }
 
 .paragraph1 {
-  background-color: aqua;
+  background-color: green;
   color: white;
 }
 
 .form-input {
-  background-color: aqua;
+  background-color: green;
+}
+
+.mixin-demo {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  color: black;
+}
+
+.second-mixin {
+  height: 400px;
+  width: 200px;
+  background-color: violet;
+  color: white;
 }
 /*# sourceMappingURL=my-styles.css.map */

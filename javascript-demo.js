@@ -113,3 +113,32 @@ var name2 = " monika abhijeet";
 
 // trim
 console.log(name1.trim() === name2.trim());
+
+// array methods
+// toString();
+const fruits = ["apple", "orange", "mango", "peach", "strawberry", "guava"];
+const vegetables = ["carrot", "onion", "tomato", "potato"];
+const leafies = ["spinach", "methi", "coriander", "curry"];
+console.log(fruits.toString());
+
+// join
+console.log(fruits.join(" "));
+
+// push
+fruits.push("watermelon");
+console.log(fruits);
+
+// pop
+console.log(fruits.pop());
+// length
+console.log(fruits);
+console.log(fruits.length);
+
+// concat
+console.log(fruits.concat(vegetables, leafies));
+
+// splice
+// const fruits = ["apple", "orange", "mango"];
+
+console.log(fruits.splice(2, 1, "grapes", "kiwi"));
+console.log(fruits);

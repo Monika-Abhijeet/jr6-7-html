@@ -190,3 +190,63 @@ if (loginUser.length > 0) {
 } else {
   console.log("login failed");
 }
+
+const capGEmployees = [
+  "Monika",
+  "siddireddy",
+  "madhu",
+  "harish",
+  "deepthi",
+  "keerthana",
+  "jeeshitha",
+  "Akhila",
+];
+
+const TCSEmployees = ["Sharad", "nishitha", "pranamya", "harshika"];
+const [emp1, emp2, , emp3, ...remainingEmployees] = capGEmployees;
+console.log(emp1, emp2, emp3);
+console.log(remainingEmployees);
+console.log([...capGEmployees, ...TCSEmployees]);
+
+const personOne = {
+  name: "monika",
+  age: 28,
+  email: "monika@gmail.com",
+  address: {
+    apartment: "abc",
+    city: "bangalore",
+    state: "karnataka",
+  },
+};
+const personalDetails = {
+  name: "monika",
+  age: 28,
+  email: "monika@gmail.com",
+  address: {
+    apartment: "abc",
+    city: "bangalore",
+    state: "karnataka",
+  },
+};
+
+const careerDetails = {
+  empId: "12345",
+  name: "Monika Abhijeet",
+  email: "monika@capg.com",
+  address: {
+    building: "#567",
+    city: "bangalore",
+    state: "karnataka",
+    country: "INDIA",
+  },
+};
+
+const {
+  email,
+  address: { state },
+  name,
+  ...remainingInfo
+} = personOne;
+
+console.log(email, state, name);
+console.log({ ...personalDetails, ...careerDetails });

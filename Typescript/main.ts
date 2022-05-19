@@ -53,7 +53,7 @@ let person = {
 printPersonDetails(person);
 
 class Employee {
-  protected empName: string;
+  empName: string;
   constructor(name: string) {
     this.empName = name;
   }

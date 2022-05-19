@@ -252,10 +252,15 @@ console.log(email, state, name);
 console.log({ ...personalDetails, ...careerDetails });
 
 var numbers = [1, 2, 3, 4, 5];
+var filteredNumber = numbers
+  .filter((num) => {
+    return num % 2 == 0;
+  })
+  .map((num) => {
+    return num * num;
+  });
 
-var squareNumbers = numbers.map((num) => {
-  return num * num;
-});
+console.log(filteredNumber);
 
 const halodocEmp = [
   "Monika",
@@ -275,5 +280,33 @@ const empDetails = halodocEmp.map((emp, index) => {
     company: "Halodoc",
   };
 });
-console.log(squareNumbers);
 console.log(empDetails);
+
+name1 = {
+  firstName: "Monika",
+  lastName: "Abhijeet",
+};
+
+let printFullName = function (city, state) {
+  console.log(
+    `My name is ${this.firstName} ${this.lastName} and i am from ${city}, ${state}`
+  );
+};
+var name2 = {
+  firstName: "Sharad",
+  lastName: "Gudihal",
+};
+let name3 = {
+  firstName: "sachin",
+  lastName: "Tendulkar",
+};
+printFullName.call(name1, "bangalore", "karnataka");
+printFullName.call(name3, "mumbai", "maharashrtra");
+printFullName.call(name2, "hyderabad", "AP");
+
+printFullName.apply(name1, ["bangalore", "karnataka"]);
+printFullName.apply(name3, ["mumbai", "maharashrtra"]);
+printFullName.apply(name2, ["hyderabad", "AP"]);
+
+let newName1 = printFullName.bind(name1, "Bangalore", "Karnataka");
+newName1();
